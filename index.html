@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment here</title>
+</head>
+<body>
+  <div id="comment-box">
+    <h1>Comment here</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eveniet pariatur quod, quis corporis blanditiis iure commodi quae eius, saepe veritatis beatae doloremque nemo alias consectetur. Magnam quam, porro dolorum, consequuntur nostrum alias blanditiis, ea doloremque quaerat recusandae labore? Illo adipisci voluptatem illum amet? Amet, beatae! Quibusdam cum tenetur est.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eveniet pariatur quod, quis corporis blanditiis iure commodi quae eius, saepe veritatis beatae doloremque nemo alias consectetur. Magnam quam, porro dolorum, consequuntur nostrum alias blanditiis, ea doloremque quaerat recusandae labore? Illo adipisci voluptatem illum amet? Amet, beatae! Quibusdam cum tenetur est.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eveniet pariatur quod, quis corporis blanditiis iure commodi quae eius, saepe veritatis beatae doloremque nemo alias consectetur. Magnam quam, porro dolorum, consequuntur nostrum alias blanditiis, ea doloremque quaerat recusandae labore? Illo adipisci voluptatem illum amet? Amet, beatae! Quibusdam cum tenetur est.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eveniet pariatur quod, quis corporis blanditiis iure commodi quae eius, saepe veritatis beatae doloremque nemo alias consectetur. Magnam quam, porro dolorum, consequuntur nostrum alias blanditiis, ea doloremque quaerat recusandae labore? Illo adipisci voluptatem illum amet? Amet, beatae! Quibusdam cum tenetur est.</p>
+  </div> 
+  <div>
+    <textarea name="" id="input-filed" cols="80" rows="10"></textarea>
+  <br> 
+  <button id="comment-button">Comment</button>
+  </div>
+  
+  
+  <script>
+    document.getElementById("comment-button").addEventListener('click',function(){
+    const textarea = document.getElementById('input-filed') 
+    const text = textarea.value;
+    const p = document.createElement('p');
+    p.innerText = text;
+
+    const box = document.getElementById('comment-box');
+    box.appendChild(p)
+    })
+  </script>
+</body>
+</html>
+
+
